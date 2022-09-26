@@ -1,0 +1,33 @@
+{
+    "@jupyterlab/notebook-extension:tracker": {
+        "recordTiming": true
+    },
+    "@ryantam626/jupyterlab_code_formatter:settings": {
+        "formatOnSave": true
+    },
+    "@jupyterlab/shortcuts-extension:shortcuts": {
+        "shortcuts": [
+            {
+                "command": "runmenu:restart-and-run-all",
+                "keys": [
+                    "Ctrl Shift R"
+                ],
+                "selector": "[data-jp-code-runner]"
+            },
+            {
+                "command": "kernelmenu:restart-and-clear",
+                "keys": [
+                    "Ctrl Shift C"
+                ],
+                "selector": "[data-jp-kernel-user]"
+            },
+            {
+                "command": "docmanager:reload",
+                "keys": [
+                    "Ctrl Shift L"
+                ],
+                "selector": "[data-jp-kernel-user]"
+            }
+        ]
+    }
+}
